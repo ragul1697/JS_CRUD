@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CRUD App using JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading-container">
+        <h2>CRUD App using JavaScript</h2>
+      </div>
+
+      <div class="form-container">
+        <form action="javascript:void(0);" method="POST">
+          <input type="text" id="add-name" placeholder="New country" />
+          <button type="submit" id="btn" onclick="addorupdate()">ADD</button>
+        </form>
+      </div>
+
+      <div class="app-container">
+        <h3 id="counter"></h3>
+
+        <table>
+          <tr>
+            <th>Name</th>
+          </tr>
+          <tbody id="countries"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
